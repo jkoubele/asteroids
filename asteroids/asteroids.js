@@ -757,6 +757,8 @@ shipDY=0;
 shipRot=0;
 immortality=200;
 
+shots=[];
+
     if(level===1){
         level=1;
      lives=3;
@@ -812,7 +814,8 @@ function handleMouseDown(event) {
    
   if(mode==='menu' ||mode==='gameover' ){
       if(mouseX>390 && mouseX<680 && mouseY>200 && mouseY<365){
-        setLevel(1);
+        level=1;
+        setLevel(level);
         mode="play"; 
       }
         
